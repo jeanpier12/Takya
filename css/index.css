@@ -1,0 +1,258 @@
+/* fuentes */
+/* improtando una fuente */
+@font-face {
+    font-family:"letraNueva";
+    src: url("../fonts/FjallaOne-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:"icons";
+     src:/* url("../fonts/websymbols-regular-webfont.svg#WebSymbolsRegular") format('svg'), */
+         url("../fonts/websymbols-regular-webfont.eot") ;
+    src:url("../fonts/websymbols-regular-webfont.eo?#iefix ")  format("embedded-opentype"),
+        /* url("../fonts/websymbols-regular-webfont.woff")        format("woff"), */
+        url("../fonts/websymbols-regular-webfont.ttf")         format("truetype");
+  
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* estilos generales */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image:url(../img/paven.png) ;
+}
+
+a{
+   color: #529125;
+   text-decoration: none; 
+}
+a:hover{
+    color: #285616;
+}
+
+
+
+/* cabezera */
+.header{
+    /* min-width lo minimo que se puede reducir */
+    min-width: 1024px; 
+    width: 100%;
+    height:250px ;
+    margin: 0px auto;
+}
+ .header a{
+     text-decoration: none;
+ }
+ .logotipo{
+     width: 770px;
+     margin: auto;
+     padding-top: 20px;
+ }
+ .header .logotipo img{
+     display: block;
+     text-align: center;
+     width: 160px;
+     margin: 0px auto;
+ }
+ header h1{
+     text-align: center;
+     font-size: 40px;
+     /* para poner en mayuculas las letras */
+     text-transform: uppercase;
+     margin-top: 10px;
+     /* efceto tridimencional */
+     text-shadow: 0px 2px 1px #333333;
+     transition:all 300ms;
+ }
+
+ header h1:hover{
+     text-shadow: 0px 2px 1px #333333,0px 0px 4px  #70b231;
+ }
+ /* como el h1 esta dentro de un enlace tengo que ponerle el color al enlace */
+ header a{
+     color: #70b231;
+ }
+/* menu de navegacion*/
+#nav{
+    width: 100%;
+    height: 40px;
+    background-color: #333333;
+    color: white;
+    font-family: sans-serif;
+    font-size: 14px;
+    box-shadow: 0px 0px 2px gray;
+}
+#nav ul{
+    list-style: none;
+    text-decoration: none;
+    margin:0px  auto;
+    width: 1130px;
+}
+#nav >ul >li{
+    line-height:40px;
+    float:left;
+    border-right:1px solid gray ;
+    width:200px ;
+}
+#nav> ul >li a{
+    display: block;
+    padding-left:20px ;
+    padding-right: 20px;
+    color: white;
+    text-decoration: none;
+}
+/*  con este simbolo > me esta indicando modificame los hijos directos 
+del siguiente > elementos  */
+#nav> ul >li> a:first-child{
+    border-left: 1px solid gray;
+}
+#nav >ul >li:hover{
+background-color:#70b231; 
+box-shadow: 0px 0px 4px green inset;
+transition: all 300ms;
+}
+/* menu desplegable */
+#nav> ul> li> ul {
+    /* diplay none  estos cambios se mantienen ocultos  */
+    display: none;
+    position: absolute;
+    width: 160px;
+    box-shadow: 0px 2px 2px gray;
+    z-index:1 ;
+}
+
+/* aca me esta diciendo que los nav que su hijo directo sean ul y este ul 
+tenga como hijo diecto la etiqueta li al pasar el maus que me muestre
+(le estamos diciendo que nos muestra con el display:block) los hijos directos ul de li   */
+#nav> ul >li:hover > ul{
+    display: block;
+}
+#nav >ul> li:hover >ul >li {
+    background-color: #f2f1f0;
+    border-bottom: 1px solid #d6d6d6;
+    padding:8px;
+    line-height: 25px;
+    font-size: 13px;
+}
+
+/* para que se ven las letras y colores de arriba al enlace <a> tengo que darle estas propiedades  */
+#nav> ul> li:hover >ul >li >a{
+    color: #6666;
+}
+#nav >ul> li:hover >ul >li:hover {
+   box-shadow: 0px 0px 6px #ccc inset ;
+   background:#ccc ;
+}
+/* contenedor de toda la barra lateral*/
+#conten{
+ margin: 0px auto ;
+ width: 1250px;
+  min-height: 1100px; 
+}
+
+ /* seccciones */
+
+ #section{
+     margin: auto;
+     width: 75%;
+     font-family:  Arial, Helvetica, sans-serif;
+    
+ }
+
+ #section .titulo{
+   font-family:"letraNueva";
+   font-size :24px;
+   margin-top: -20px;
+   font-weight: normal;
+   letter-spacing:1px ;
+   text-align: center;
+   padding-top: 20px;
+   padding-bottom: 10px;
+   border-bottom: 1px solid #ccc;
+
+ }
+
+ #section section{
+     margin-top: 40px;
+     background-color: white;
+     padding: 20px;
+     border:1px solid #ccc;
+     box-shadow: 0px 0px 4px #c9c9c9;
+     color: #333333;
+     overflow: hidden;
+ }
+
+ #section .article{
+     margin: 10px;
+     margin-top: 20px;
+     margin-bottom: 20px;
+ }
+ 
+.tituloarticulos{
+     
+     float:inline;
+  
+     margin-left: 60px;
+     
+     font-size: 25px;
+   
+ }
+ .titulo2{
+    font-size: 25px;
+    margin-left: 130px;
+ }
+ .titulo21{
+    font-size: 25px;
+    margin-left: 180px;
+ }
+
+ img{
+    
+     margin-left: 40px;
+ }
+ article div{
+     width: 1200px;
+     margin: auto;
+ }
+ 
+ 
+
+.orange{
+
+color:#d69d2a
+
+}
+
+.red{
+    color: red;
+}
+
+.icom{
+    font-family: "icons";
+}
+ 
+
+
+ /* pie de paguina  */
+ footer{
+     width: 100%;
+     margin:0px auto ;
+     text-align: center;
+     margin-top: 40px;
+     background-color:rgba(5, 0, 0, 0.781);
+     padding-top:10px ;
+     padding-bottom:10px ;
+     color: white;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 14px;
+     box-shadow: 0px 0px 4px grey;
+     height: 50px;;
+
+ }
