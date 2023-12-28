@@ -1,0 +1,36 @@
+.conten{
+    width: 80%;
+    margin: auto;
+    line-height: 20px;
+    margin-top:80px;
+}
+
+.div1{
+    width: 250px;
+    margin: auto;
+}
+.div2{
+    width: 250px;
+    margin: auto;
+}
+
+
+label{
+    display: block;
+ font-size: 20px;
+ margin-top: 10px; 
+}
+input{
+    padding: 5px;
+    width: 80%;
+   
+}
+button{
+    margin: auto;
+    display: block;
+    margin-top: 15px;
+    padding: 8px;
+    width: 60%;
+    border-radius: 5px;
+
+}

@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>master en css</title>
+    <link rel="icon"  type="favicon/x-icon" href="../img/supertux.png">
+    <script src="https://kit.fontawesome.com/235aee5699.js" crossorigin="anonymous"></script>
     <link rel="stylesheet"  type="text/css" href="/css/index.css">
 </head>
 <body>
@@ -12,9 +14,9 @@
         <!-- inicio de la cabezera  -->
 <header class="header">
     <div class="logotipo">
-           <img src="../img/logo.jpg" alt="logotipo" >
+           <img src="img/logo.jpg" alt="logotipo" >
     </div>
-    <a href="../codigo/proyecto.html">
+    <a href="#">
         <h1>Takya Sistem Segurity</h1> </a>
 </header>
         <!-- fin de la cabezera  -->
@@ -23,40 +25,40 @@
          <nav id="nav">
          <ul>
              <li>
-                 <a href="/codigo/Login.html">Login</a>
+                 <a href="codigo/Login.html">Login</a>
              </li>
              <li>
-                <a href="/codigo/Catalogos.html">Catalogo</a>
+                <a href="#">Catalogo</a>
              </li>
              <li>
-                <a href="/codigo/producInfo.html">Registros</a>
+                <a href="#">Registros</a>
              </li>
 
             <li>
-                <a href="/codigo/producInfo.html">Productos Comprados</a>
+                <a href="#">Productos Comprados</a>
                 <!-- sub menu desplegable  -->
                 <ul>
                       <li>
-                        <a href="../codigo/proyecto.html">html</a>
+                        <a href="#">html</a>
                       </li>
                       <li>
-                        <a href="../codigo/proyecto.html">css</a>
+                        <a href="#">css</a>
                       </li>
                 </ul>
             </li>
             
               <li>
-                    <a href="../codigo/proyecto.html">FRAMEWORKS</a>
+                    <a href="#">FRAMEWORKS</a>
                   <!-- sub menu desplegable 2 -->
                   <ul>
                        <li>
-                           <a href="../codigo/proyecto.html">less</a>
+                           <a href="#">less</a>
                        </li>
                         <li>
-                             <a href="../codigo/proyecto.html">sass</a>
+                             <a href="#">sass</a>
                        </li>
                        <li>
-                        <a href="../codigo/proyecto.html">bustra</a>
+                        <a href="#">bustra</a>
                       </li>
                  </ul>
              </li>
@@ -80,18 +82,22 @@
        
         <h2 class="titulo">nuestra aplicación funciona es estos dipositivos</h2>
         <article class="article">
-            <table>
-              <tr> 
-           <td><p class="tituloarticulos"><a href="#">Android y IOS</a> </p></td> 
-            <td><p class="tituloarticulos"><a href="#">todos los sistemas opertativos </a></p></td>
-            <td><p class="tituloarticulos"><a href="#">todas las pc</a></p></td>
-        </tr>  
-        <tr>
-           <td><img src="../img/Para la pagina/celular.png" alt="celular" height="150px"></td> 
-           <td><img src="../img/Para la pagina/PC.png" alt="pc" height="150px"></td> 
-            <td><img src="../img/Para la pagina/Pc (2).png" alt="pc2" height="150px"></td>
-        </tr>
-        </table>
+            <div class="caja">
+           <p class="tituloarticulos"><a href="#">Android y IOS</a> </p>
+           <img class="img" src="img/Para la pagina/celular.png" alt="celular" height="150px">
+        </div>
+        <div class="caja">
+            <p class="tituloarticulos"><a href="#">todos los sistemas opertativos </a></p>
+            <img  class="img" src="img/Para la pagina/PC.png" alt="pc" height="150px">
+        </div>
+        <div class="caja">
+            <p class="tituloarticulos"><a href="#">todas las pc</a></p>
+            <img class="img"  src="img/Para la pagina/Pc (2).png" alt="pc2" height="150px">
+        </div>
+           
+           
+            
+        
         </article>
 
 
@@ -108,8 +114,8 @@
                 <td><p class="titulo2"><a href="#">KASPERKY</a></p></td>
            </tr>
           <tr>
-            <td><img src="../img/Para la pagina/ESET sin fondo.png" alt="3set sin fondo"></td>
-           <td><img src="../img/Para la pagina/KASPERKY sin fondo.png" alt="antivirus"></td>
+            <td><img src="img/Para la pagina/ESET sin fondo.png" alt="3set sin fondo"></td>
+           <td><img src="img/Para la pagina/KASPERKY sin fondo.png" alt="antivirus"></td>
         </tr>
         </table>
         </article>
@@ -119,11 +125,32 @@
 
     <section id="instructor">
       
-        <h2 class="titulo orange">otros productos de su interes  </h2>
+        <h2 class="titulo orange">nuestras redes sociales   </h2>
         <article class="article">
-            <p>
-                <a href="#">titulo de la entrada</a>
-            </p>
+            <div id="social">
+
+                <div class="twitter">
+                    <a href="#" class="icon"><img src="img/instagram-square-brands (1).svg" alt="instagram" width="50px" height="50px"></i></a>
+                    <p class="overlay">
+                        Instragram
+                    </p>
+                </div>
+                
+                <div class="Facebook">
+                    <a href="#" class="icon"><img src="img/facebook-square-brands.svg" alt="Facebook" width="50px" height="50px"></a>
+                    <p class="overlay">
+                        Facebook
+                    </p>
+                </div>
+                
+                <div class="youtube">
+                    <a href="#" class="icon"><img src="img/youtube.svg" alt="youtube" width="50px" height="50px"></a>
+                    <p class="overlay">
+                        Youtube
+                    </p>
+                </div>
+                
+                </div>
         </article>
 
         <article class="article">
